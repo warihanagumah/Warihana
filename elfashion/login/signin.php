@@ -38,11 +38,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <script type="text/javascript" src="../js/jsformvalidation.js"></script>
 </head>
 <body>
-
-
 		<!-- Require menu.php -->
-		<?php require("../layout/customer-menu.php"); ?>		
-<div class="breadcrumbs">
+	<?php 
+		include("../layout/customer-menu.php"); 
+		//include validation 
+		require_once("../controller/utilitycontroller.php");;
+		?>		
+	<div class="breadcrumbs">
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
 				<li><a href="../../index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
@@ -50,11 +52,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ol>
 		</div>
 	</div>
-
-	<?php
-	//include validation 
-	require_once("phpformvalidation.php");
-	?>
 
 
 <div class="account">
@@ -85,7 +82,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>
 	</div>
 </div>
-
 
 <?php include("../layout/customer-footer.php"); ?>
 

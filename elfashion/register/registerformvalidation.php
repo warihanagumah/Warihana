@@ -6,12 +6,7 @@
     //declares global  variables 
   	$firstname=$lastname= $email=$password=$confirmpass="";
 
-    //check if the register button was clicked 
-    if(isset($_POST['register']))
-    {
-      phpvalidateregister();
-    }    
-
+  
     /*
     *A function that cleans user input
     *@param input to be cleaned 
@@ -120,6 +115,21 @@
 
         //check if confirmation password match the given password 
         if($password!=$confirmpass)
+        {
+          $ok=false;
+        }
+      }
+
+      //validate phone number 
+      if(empty ($_POST['pno'])) 
+      {
+        $ok=false;
+      }else
+      {
+        $phone=$_POST['pno'];
+
+        //check if confirmation password match the given password 
+        if(!preg_match('/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/', $phone))
         {
           $ok=false;
         }

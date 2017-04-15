@@ -1,4 +1,7 @@
-
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
 <!--header-->
 		<div class="header">
 			<div class="header-top">
@@ -95,3 +98,4 @@
 				</div>
 			</div>
 		</div>
+</body>

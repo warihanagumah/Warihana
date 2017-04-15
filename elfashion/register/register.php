@@ -5,10 +5,6 @@
 */
 ?>
 
-<?php
-	//include validation 
-	require_once("phpformsvalidation.php");
-?>
 
 <!DOCTYPE html>
 <html>
@@ -47,7 +43,12 @@
 <body>
 
 	<!-- Include menu.php -->
-	<?php require('../layout/customer-menu.php');?> 
+	<?php require('../layout/customer-menu.php'); 
+
+	//include validation 
+	require_once("../controller/utilitycontroller.php");
+	?>
+
 	<div class="breadcrumbs">
 			<div class="container">
 				<ol class="breadcrumb breadcrumb1 animated wow slideInLeft animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
@@ -69,8 +70,11 @@
 							<span id="lname_validation">Last Name</span>
 							<input type="text" name="lname" id="lname" required> 
 						 
-							 <span id="email_validation">Email Address</span>
-							 <input type="email" name="email" id="email" required> 
+							<span id="email_validation">Email Address</span>
+							<input type="email" name="email" id="email" required> 
+
+							<span id="pno_validation">Phone Number</span>
+							<input type="text" name="pno" id="pno" required>
 						</div>	 
 					</div>
 						 

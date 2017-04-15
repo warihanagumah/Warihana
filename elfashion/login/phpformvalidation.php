@@ -4,12 +4,6 @@
   *@return return true or false 
   */   
 
-  //check if the login button was clicked
-  if(isset($_POST['login'])){
-    phpvalidatelogin();
-    echo "clicked";
-  }  
-
   function phpvalidatelogin()
   {
     $check=true;

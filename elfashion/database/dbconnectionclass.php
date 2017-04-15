@@ -53,9 +53,11 @@
 			//run query
 			$this->dbresults = mysqli_query($this->dbconnector,$sql);
 
+
 			//check if any record was returned
 			if($this->dbresults==false)
 			{
+				echo mysqli_error($this->dbconnector);
 				return false;
 			}else 
 			{
