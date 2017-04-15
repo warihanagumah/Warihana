@@ -30,7 +30,7 @@
 			//check if validation is successful	
 			if($ok==true){
 				//write query to insert
-				$sql="INSERT INTO customer (id,first_name, last_name, email, password, phone) VALUES (2, '$firstname', '$lastname', '$email','$password', '$phone')";
+				$sql="INSERT INTO customer (id,first_name, last_name, email, password, phone) VALUES (3, '$firstname', '$lastname', '$email','$password', '$phone')";
 				//run quer
 				$result = $this->query($sql);	  
 		  		if($result){

@@ -40,10 +40,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 		<!-- Require menu.php -->
 	<?php 
-		include("../layout/customer-menu.php"); 
-		//include validation 
-		require_once("../controller/utilitycontroller.php");;
-		?>		
+		require_once("../controller/utilitycontroller.php");
+		include("../layout/customer-menu.php");		
+	?>		
 	<div class="breadcrumbs">
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">

@@ -43,10 +43,10 @@
 <body>
 
 	<!-- Include menu.php -->
-	<?php require('../layout/customer-menu.php'); 
-
+	<?php 
 	//include validation 
 	require_once("../controller/utilitycontroller.php");
+	include('../layout/customer-menu.php'); 
 	?>
 
 	<div class="breadcrumbs">
